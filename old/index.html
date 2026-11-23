@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DCS Mods</title>
+  <meta name="description" content="Free DCS World mods: liveries, missions, scripts and tools.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hud-grid" aria-hidden="true"></div>
+    <div class="wrap hero-inner">
+      <p class="eyebrow">DCS World mods</p>
+      <h1 id="site-title">Mods</h1>
+      <p id="site-tagline" class="tagline"></p>
+      <p class="byline">by <span id="site-author"></span> · <span id="mod-count"></span></p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="toolbar">
+      <label class="search">
+        <span class="visually-hidden">Search mods</span>
+        <input id="search" type="search" placeholder="Search mods…" autocomplete="off">
+      </label>
+      <div id="filters" class="filters" role="tablist" aria-label="Filter by category"></div>
+    </div>
+
+    <section id="grid" class="grid" aria-live="polite"></section>
+    <p id="empty" class="empty" hidden>No mods match that search.</p>
+  </main>
+
+  <footer class="wrap footer">
+    <div id="footer-links" class="footer-links"></div>
+    <p class="fine">Fan-made mods for DCS World. Not affiliated with Eagle Dynamics. Use at your own risk and back up your files.</p>
+  </footer>
+
+  <dialog id="detail" class="detail">
+    <button class="close" id="close" aria-label="Close">×</button>
+    <div id="detail-body"></div>
+  </dialog>
+
+  <script src="mods.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

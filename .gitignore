@@ -1,0 +1,6 @@
+# design checker's working files and screenshots
+.taste-skill/
+shots/
+# local preview settings
+.claude/launch.json
+.DS_Store
